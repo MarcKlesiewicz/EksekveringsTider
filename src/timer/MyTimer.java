@@ -1,4 +1,4 @@
-package bubbleSort;
+package timer;
 
 /**
  * Denne hjælpeklasse hjælper med at tage tid på kodeeksekvering

@@ -1,10 +1,8 @@
 package selectionSort;
 
 
-
-import bubbleSort.MyTimer;
-
 import java.util.Date;
+import timer.MyTimer;
 
 public class SelectionSort {
 
@@ -12,7 +10,7 @@ public class SelectionSort {
 
         SelectionSort newArray = new SelectionSort();
 
-        long startTime = bubbleSort.MyTimer.currentTimestamp();
+        long startTime = MyTimer.currentTimestamp();
 
         Date date=new Date(startTime);
         System.out.println("Time is " + date.toString() + " (" + date.getTime() + ")\n");
@@ -21,7 +19,7 @@ public class SelectionSort {
         newArray.selectionSort();
         newArray.printArray();
 
-        long endTime = bubbleSort.MyTimer.currentTimestamp();
+        long endTime = MyTimer.currentTimestamp();
         String resultat = MyTimer.timeElapsed(startTime, endTime) ;
         System.out.println();
         System.out.println(resultat);
